@@ -35,5 +35,10 @@ namespace CourierTycoon.Components
             Pack pack = new Pack(client, parcelLocker);
             packs.Add(pack);
         }
+
+        public void removeParcel(Pack pack)
+        {
+            packs.Remove(pack);
+        }
     }
 }
