@@ -7,7 +7,8 @@ namespace CourierTycoon.Components
     class Pack
     {
         long id;
-        string client;
+        int cap; //capA - 0, capB - 1, capC - 2
+        Client client;
         ParcelLocker parcelLocker;
 
         public Pack(Client client, ParcelLocker parcelLocker)
